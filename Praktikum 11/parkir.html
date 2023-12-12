@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung biaya parkir</title>
+</head>
+<body>
+    <h1>Menghitung biaya parkir</h1>
+
+    <label for="masuk">Jam Masuk</label>
+    <input type="number" id="masuk">
+    <br>
+    <label for="keluar">Jam keluar</label>
+    <input type="number" id="keluar" onchange="hitungParkir()">
+    <hr>
+
+    Durasi Parkir: <span id="hasilDurasi">0</span> Jam
+    <br>
+    <br>
+    Biaya Parkir: Rp. <span id="totalBiaya">0</span>
+
+    <script src="parkir.js"></script>
+</body>
+</html>
